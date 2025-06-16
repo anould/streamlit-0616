@@ -1,0 +1,3 @@
+import streamlit as st 
+
+st.image("https://www.example.com/image.jpg", caption="從網路載入的圖片", use_column_width=True)

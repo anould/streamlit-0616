@@ -1,0 +1,14 @@
+import streamlit as st
+
+import streamlit as st
+
+st.title("📊 PowerPoint 檔案展示")
+
+# 顯示本地 PowerPoint 檔案的下載連結
+with open("demo.pptx", "rb") as file:
+    btn = st.download_button(
+        label="下載 PowerPoint",
+        data=file,
+        file_name="demo.pptx",
+        mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    )
